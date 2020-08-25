@@ -91,7 +91,7 @@ namespace Blog.Core.Service.Base
 
         public async Task<TEntity> QueryById(object objId)
         {
-            return await QueryById(objId);
+            return await repository.QueryByID(objId);
         }
 
         public async Task<TEntity> QueryById(object objId, bool useCache = false)

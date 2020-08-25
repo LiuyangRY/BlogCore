@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj": {}
+    "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj": {}
   },
   "projects": {
-    "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj": {
+    "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj",
+        "projectUniqueName": "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj",
         "projectName": "Blog.Core.Common",
-        "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj",
+        "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\obj\\",
+        "outputPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

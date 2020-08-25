@@ -10,10 +10,10 @@
     <ProjectReference Include="..\Blog.Core.Model\Blog.Core.Model.csproj"/>
     <ProjectReference Include="..\Blog.Core.Extensions\Blog.Core.Extensions.csproj"/>
     <ProjectReference Include="..\Blog.Core.IService\Blog.Core.IService.csproj"/>
-    <ProjectReference Include="..\Blog.Core.Service\Blog.Core.Service.csproj"/>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1"/>
     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.1.2"/>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0"/>
   </ItemGroup>
 </Project>

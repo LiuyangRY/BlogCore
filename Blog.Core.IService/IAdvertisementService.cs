@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
+﻿using Blog.Core.IService.Base;
 using Blog.Core.Model;
 
 namespace Blog.Core.IService
 {
-    public interface IAdvertisementService
+    public interface IAdvertisementService : IBaseService<Advertisement>
     {
     }
 }

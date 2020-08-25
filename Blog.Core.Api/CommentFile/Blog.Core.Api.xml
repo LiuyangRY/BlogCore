@@ -38,9 +38,15 @@
             <param name="model">广告</param>
             <returns>更新成功返回true，否则返回false</returns>
         </member>
-        <member name="M:AdvertisementController.Query(System.Int32)">
+        <member name="M:AdvertisementController.QueryAll">
             <summary>
-            查询广告
+            查询所有广告
+            </summary>
+            <returns>返回所有广告</returns>
+        </member>
+        <member name="M:AdvertisementController.QueryById(System.Int32)">
+            <summary>
+            查询指定广告
             </summary>
             <param name="id">广告编号</param>
             <returns>返回指定编号的广告</returns>
@@ -81,6 +87,11 @@
         <member name="P:Blog.Core.Api.Startup.Version">
             <summary>
             文档版本
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Api.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            配置Autofac容器，在Program.cs的CreateHostBuilder中添加Autofac服务工厂
             </summary>
         </member>
     </members>

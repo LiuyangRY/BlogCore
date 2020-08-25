@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Authorization;
 using Blog.Core.Model;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Blog.Core.Service.Base;
 using System.Linq;
+using Blog.Core.IService;
 
 /// <summary>
 /// 广告控制器
@@ -12,7 +12,12 @@ using System.Linq;
 [ApiController]
 public class AdvertisementController : ControllerBase
 {
-    BaseService<Advertisement> service;
+    IAdvertisementService service;
+
+    public AdvertisementController(IAdvertisementService advertisementService)
+    {
+        service = advertisementService;
+    }
 
     /// <summary>
     /// 两数相加
@@ -65,14 +70,25 @@ public class AdvertisementController : ControllerBase
     }
 
     /// <summary>
-    /// 查询广告
+    /// 查询所有广告
+    /// </summary>
+    /// <returns>返回所有广告</returns>
+    [HttpPost]
+    [Route("[controller]/[action]")]
+    public List<Advertisement> QueryAll()
+    {
+        return service.Query().Result.ToList();
+    }
+
+    /// <summary>
+    /// 查询指定广告
     /// </summary>
     /// <param name="id">广告编号</param>
     /// <returns>返回指定编号的广告</returns>
     [HttpPost]
     [Route("[controller]/[action]")]
-    public List<Advertisement> Query([Required]int id)
+    public Advertisement QueryById([Required]int id)
     {
-        return service.Query(model => model.Id.Equals(id)).Result.ToList();
+        return service.QueryById(id).Result;
     }
 }

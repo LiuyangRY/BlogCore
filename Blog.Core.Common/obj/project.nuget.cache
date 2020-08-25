@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cmH59cbtEXwFhvS3XkzhEPEwqSZfqrTJwAuWhk3asg3VxpMDdWA06fOc5+Kew54N6CAjmMXIf2c8tSLz04U4Hg==",
+  "dgSpecHash": "VLjKggyPDkQ5a7RXl/JxLsGRLKypuYBsHEF/x0OPwwyD0QBsz3qgHEa0TvDYG61X964uYEE1k6QDIjIqZtebbw==",
   "success": true,
-  "projectFilePath": "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj",
+  "projectFilePath": "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0-preview.7.20364.11\\microsoft.extensions.configuration.5.0.0-preview.7.20364.11.nupkg.sha512",

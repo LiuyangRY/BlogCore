@@ -1018,6 +1018,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Blog.Core.Model": "1.0.0",
           "sqlSugarCore": "5.0.0.15"
         },
         "compile": {
@@ -4287,11 +4288,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
+      "projectUniqueName": "F:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
       "projectName": "Blog.Core.Service",
-      "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
+      "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Service\\obj\\",
+      "outputPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4307,11 +4308,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
             },
-            "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
             }
           }
         }

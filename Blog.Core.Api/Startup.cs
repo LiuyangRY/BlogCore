@@ -2,9 +2,10 @@ using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using Autofac;
 using Blog.Core.Common.DB;
 using Blog.Core.Common.Helper;
-using Blog.Core.Extensions.Helper.Middleware;
+using Blog.Core.Extensions.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,12 +30,12 @@ namespace Blog.Core.Api
         /// </summary>
         public string Version { get; set; } = "V1";
 
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -167,6 +168,14 @@ namespace Blog.Core.Api
             {
                 endpoints.MapControllers();
             });
+        }
+
+        /// <summary>
+        /// 配置Autofac容器，在Program.cs的CreateHostBuilder中添加Autofac服务工厂
+        /// </summary>
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            builder.RegisterModule(new AutofacModuleRegister());
         }
     }
 }

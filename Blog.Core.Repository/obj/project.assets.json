@@ -989,6 +989,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Blog.Core.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Blog.Core.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Core.Model.dll": {}
+        }
       }
     }
   },
@@ -4220,10 +4230,16 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Blog.Core.Model/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Core.Model/Blog.Core.Model.csproj",
+      "msbuildProject": "../Blog.Core.Model/Blog.Core.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Blog.Core.Model >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "sqlSugarCore >= 5.0.0.15"
     ]
@@ -4234,11 +4250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+      "projectUniqueName": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
       "projectName": "Blog.Core.Repository",
-      "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+      "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\obj\\",
+      "outputPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4253,7 +4269,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,16 +1,15 @@
 ﻿using Blog.Core.IService;
 using Blog.Core.Model;
 using Blog.Core.Repository.Base;
+using Blog.Core.Service.Base;
 
 namespace Blog.Core.Service
 {
-    public class AdvertisementService : IAdvertisementService
+    public class AdvertisementService : BaseService<Advertisement>, IAdvertisementService
     {
-        IBaseRepository<Advertisement> repo;
-
         public AdvertisementService(IBaseRepository<Advertisement> repository)
         {
-            repo = repository;
+            base.repository = repository;
         }
     }
 }

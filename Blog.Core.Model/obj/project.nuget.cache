@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "krzSksmbXgA7qx1+Kfx2ezYSSKz9gy/OPravl1hU+j/pjL+SqEwoqB6IRrNYtEXfByo7fS6KlgWnzYph9Jy8/w==",
+  "dgSpecHash": "svTKVBX/5l8YaSWY1IOfk6jF5q3YLAv7Ep1Zx9qwMd8WCA0ODqiH/CPfd06wD+THjJaylCL/VN7hMYJwxcNgqQ==",
   "success": true,
-  "projectFilePath": "f:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj",
+  "projectFilePath": "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

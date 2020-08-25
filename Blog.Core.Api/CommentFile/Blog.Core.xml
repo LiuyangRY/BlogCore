@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.Core.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Blog.Core.Api.Controllers.WeatherForecastController">
+            <summary>
+            天气广播控制器
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.WeatherForecastController.Get">
+            <summary>
+            获取5天的天气信息
+            </summary>
+            <returns>天气信息集合</returns>
+        </member>
+        <member name="P:Blog.Core.Api.Startup.ApiName">
+            <summary>
+            接口名称
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Api.Startup.Version">
+            <summary>
+            文档版本
+            </summary>
+        </member>
+    </members>
+</doc>

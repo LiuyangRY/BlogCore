@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.Core.Api</name>
+    </assembly>
+    <members>
+        <member name="T:AdvertisementController">
+            <summary>
+            广告控制器
+            </summary>
+        </member>
+        <member name="M:AdvertisementController.Sum(System.Int32,System.Int32)">
+            <summary>
+            两数相加
+            </summary>
+            <param name="first">加数</param>
+            <param name="second">被加数</param>
+            <returns>相加结果</returns>
+        </member>
+        <member name="M:AdvertisementController.Add(Blog.Core.Model.Advertisement)">
+            <summary>
+            添加广告
+            </summary>
+            <param name="model">广告</param>
+            <returns>添加的广告编号</returns>
+        </member>
+        <member name="M:AdvertisementController.Delete(Blog.Core.Model.Advertisement)">
+            <summary>
+            删除广告
+            </summary>
+            <param name="model">广告</param>
+            <returns>删除成功返回true，否则返回false</returns>
+        </member>
+        <member name="M:AdvertisementController.Update(Blog.Core.Model.Advertisement)">
+            <summary>
+            更新广告
+            </summary>
+            <param name="model">广告</param>
+            <returns>更新成功返回true，否则返回false</returns>
+        </member>
+        <member name="M:AdvertisementController.Query(System.Int32)">
+            <summary>
+            查询广告
+            </summary>
+            <param name="id">广告编号</param>
+            <returns>返回指定编号的广告</returns>
+        </member>
+        <member name="T:Blog.Core.Api.Controllers.WeatherForecastController">
+            <summary>
+            天气广播控制器
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.WeatherForecastController.Get">
+            <summary>
+            获取5天的天气信息
+            </summary>
+            <returns>天气信息集合</returns>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.WeatherForecastController.GetLoveInfo">
+            <summary>
+            获取爱信息
+            </summary>
+            <returns>爱信息实体</returns>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.WeatherForecastController.GetToken">
+            <summary>
+            获取客户端令牌
+            </summary>
+            <returns>客户端令牌</returns>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.WeatherForecastController.IgnoreAction(System.String)">
+            <summary>
+            不显示方法
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Api.Startup.ApiName">
+            <summary>
+            接口名称
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Api.Startup.Version">
+            <summary>
+            文档版本
+            </summary>
+        </member>
+    </members>
+</doc>

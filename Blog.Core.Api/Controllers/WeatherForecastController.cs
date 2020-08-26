@@ -88,10 +88,31 @@ namespace Blog.Core.Api.Controllers
         }
 
         /// <summary>
+        /// 获取管理员令牌
+        /// </summary>
+        /// <returns>客户端令牌</returns>
+        [HttpGet]
+        [Authorize("Client")]
+        [Route("[controller]/[action]")]
+        public ActionResult<string> GetAdminToken()
+        {
+            var claims = new []
+            {
+                new Claim(ClaimTypes.Role, "Admin")
+            };
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("thisismytesttokensecret"));
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var jwtToken = new JwtSecurityToken("Blog.Core", "Liuyang", claims, expires: DateTime.Now.AddSeconds(60), signingCredentials: credentials);
+
+            var token = new JwtSecurityTokenHandler().WriteToken(jwtToken);
+            
+            return token;
+        }
+
+        /// <summary>
         /// 不显示方法
         /// </summary>
         [HttpPost]
-        [Authorize(Policy = "SystemOrAdmin")]
         [ApiExplorerSettings(IgnoreApi = true)]
         public void IgnoreAction(string test)
         {

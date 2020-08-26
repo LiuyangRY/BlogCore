@@ -74,6 +74,12 @@
             </summary>
             <returns>客户端令牌</returns>
         </member>
+        <member name="M:Blog.Core.Api.Controllers.WeatherForecastController.GetAdminToken">
+            <summary>
+            获取管理员令牌
+            </summary>
+            <returns>客户端令牌</returns>
+        </member>
         <member name="M:Blog.Core.Api.Controllers.WeatherForecastController.IgnoreAction(System.String)">
             <summary>
             不显示方法

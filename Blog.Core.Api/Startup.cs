@@ -87,11 +87,10 @@ namespace Blog.Core.Api
                 #endregion
             });
             #region 创建自定义授权策略
-            //     services.AddAuthorization(options => {
-            //     options.AddPolicy("Client", policy => policy.RequireRole("Client").Build());
-            //     options.AddPolicy("Admin", policy => policy.RequireRole("Admin").Build());
-            //     options.AddPolicy("SystemOrAdmin", policy => policy.RequireRole("SystemOrAdmin").Build());
-            // });
+                services.AddAuthorization(options => {
+                options.AddPolicy("Client", policy => policy.RequireRole("Client").Build());
+                options.AddPolicy("Admin", policy => policy.RequireRole("Admin").Build());
+            });
             #endregion
 
             #region 官方默认认证

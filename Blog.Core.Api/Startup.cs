@@ -145,6 +145,9 @@ namespace Blog.Core.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            // 使用静态文件
+            app.UseStaticFiles();
+
             // 使用Swagger
             app.UseSwagger();
             app.UseSwaggerUI(c => {

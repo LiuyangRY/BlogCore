@@ -7,6 +7,9 @@ using Newtonsoft.Json;
 
 namespace Blog.Core.Extensions.AOP
 {
+    /// <summary>
+    /// 日志拦截器
+    /// </summary>
     public class BlogLogAOP : IInterceptor
     {
         public void Intercept(IInvocation invocation)
@@ -24,7 +27,6 @@ namespace Blog.Core.Extensions.AOP
                 // 异步获取异常，先执行
                 if (IsAsyncMethod(invocation.Method))
                 {
-
                     #region 方案一
                     // Wait task execution and modify return value
                     if (invocation.Method.ReturnType == typeof(Task))
@@ -51,10 +53,8 @@ namespace Blog.Core.Extensions.AOP
                     }
                     #endregion
 
-
                     // 如果方案一不行，试试这个方案
                     #region 方案二
-
                     //var type = invocation.Method.ReturnType;
                     //var resultProperty = type.GetProperty("Result");
                     //dataIntercept += ($"【执行完成结果】：{JsonConvert.SerializeObject(resultProperty.GetValue(invocation.ReturnValue))}");
@@ -63,7 +63,6 @@ namespace Blog.Core.Extensions.AOP
                     //{
                     //    LogLock.OutSql2Log("AOPLog", new string[] { dataIntercept });
                     //});
-
                     #endregion
                 }
                 else

@@ -2402,6 +2402,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Blog.Core.Common": "1.0.0",
           "Blog.Core.IService": "1.0.0",
           "Blog.Core.Repository": "1.0.0"
         },

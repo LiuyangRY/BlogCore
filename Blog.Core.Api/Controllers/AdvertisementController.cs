@@ -77,7 +77,7 @@ public class AdvertisementController : ControllerBase
     [Route("[controller]/[action]")]
     public List<Advertisement> QueryAll()
     {
-        return service.Query().Result.ToList();
+        return service.Query().Result?.ToList();
     }
 
     /// <summary>
@@ -89,6 +89,6 @@ public class AdvertisementController : ControllerBase
     [Route("[controller]/[action]")]
     public Advertisement QueryById([Required]int id)
     {
-        return service.QueryById(id).Result;
+        return service.QueryById(id)?.Result;
     }
 }

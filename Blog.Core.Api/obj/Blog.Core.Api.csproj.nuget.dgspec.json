@@ -429,6 +429,9 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
+              "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj": {
+                "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj"
+              },
               "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
                 "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
               },

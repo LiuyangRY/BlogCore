@@ -9,7 +9,6 @@ namespace Blog.Core.Extensions.AOP
 {
     public abstract class AOPBase : IInterceptor
     {
-
         public abstract void Intercept(IInvocation invocation);
 
         /// <summary>

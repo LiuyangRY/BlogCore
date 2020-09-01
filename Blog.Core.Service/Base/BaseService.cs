@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Blog.Core.Common.Attributes;
 using Blog.Core.IService.Base;
 using Blog.Core.Model;
 using Blog.Core.Repository.Base;
@@ -39,6 +40,7 @@ namespace Blog.Core.Service.Base
             return await repository.DeleteByIDs(ids);
         }
 
+        [MethodCache(5)]
         public async Task<IEnumerable<TEntity>> Query()
         {
             return await repository.Query();

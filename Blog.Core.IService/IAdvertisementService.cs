@@ -5,5 +5,6 @@ namespace Blog.Core.IService
 {
     public interface IAdvertisementService : IBaseService<Advertisement>
     {
+        int Sum(int first, int second);
     }
 }

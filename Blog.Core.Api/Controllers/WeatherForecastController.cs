@@ -80,7 +80,7 @@ namespace Blog.Core.Api.Controllers
             };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("thisismytesttokensecret"));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var jwtToken = new JwtSecurityToken("Blog.Core", "Liuyang", claims, expires: DateTime.Now.AddSeconds(60), signingCredentials: credentials);
+            var jwtToken = new JwtSecurityToken("Blog.Core", "Liuyang", claims, expires: DateTime.Now.AddMinutes(5), signingCredentials: credentials);
 
             var token = new JwtSecurityTokenHandler().WriteToken(jwtToken);
             

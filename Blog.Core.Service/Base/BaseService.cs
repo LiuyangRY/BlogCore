@@ -91,6 +91,7 @@ namespace Blog.Core.Service.Base
             return await repository.Query(where, pageIndex, pageSize, orderByFields);
         }
 
+        [MethodCache(10)]
         public async Task<TEntity> QueryById(object objId)
         {
             return await repository.QueryByID(objId);

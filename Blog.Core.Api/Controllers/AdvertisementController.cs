@@ -30,7 +30,7 @@ public class AdvertisementController : ControllerBase
     [Route("[controller]/[action]")]
     public int Sum(int first, int second)
     {
-        return 5;
+        return service.Sum(first, second);
     }
 
     /// <summary>

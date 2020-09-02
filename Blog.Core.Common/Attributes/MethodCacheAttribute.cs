@@ -14,7 +14,7 @@ namespace Blog.Core.Common.Attributes
         }
 
         /// <summary>
-        /// 缓存绝对过期时间（分钟）
+        /// 缓存绝对过期时间（秒）
         /// </summary>
         public int AbsoluteExpiration { get; set; } = 30;
     }

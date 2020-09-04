@@ -44,5 +44,8 @@ x64/
 *.vsp 
 *.vspx 
 
-#Backup file 
+# Backup file 
 *.bak
+
+# Configuration file
+*.config

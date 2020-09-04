@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request请求</title>
+    <title>跨域请求</title>
+    <style>
+        div {
+            margin: 10px;
+            word-wrap: break-word;
+        }
+    </style>
+    <script src="../Scripts/jquery-3.5.1.js"></script>
+    <script src="../Scripts/Request.js"></script>
 </head>
 <body>
-    <input type="button" value="发送无参数Get请求">
+    <h3>通过JsonP实现跨域请求</h3>
+    <button id="jsonp">发送一个 GET </button>
 
-    <input type="button" value="发送有参数Get请求">
+    <div id="status-jsonp"></div>
+    <div id="data-jsonp"></div>
+    <hr />
+
+
+    <h3>通过CORS实现跨域请求，另需要在服务器端配置CORE</h3>
+    <button id="cors">发送一个 GET </button>
+
+    <div id="status-cors"></div>
+    <div id="data-cors"></div>
+    <hr />
+    <button id="cors-post">发送一个 POST </button>
+
+    <div id="status-cors-post"></div>
+    <div id="data-cors-post"></div>
+    <hr />
 </body>
 </html>

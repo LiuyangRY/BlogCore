@@ -42,6 +42,18 @@ namespace Blog.Core.Api
         {
             // 注入Configuration
             services.AddSingleton(new Appsettings(Configuration));
+
+            // 配置跨域请求策略
+            services.AddCors(c =>
+            {
+                c.AddPolicy("CorsIpAccess", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
             // 配置Swagger
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("V1", new OpenApiInfo(){
@@ -157,6 +169,9 @@ namespace Blog.Core.Api
             });
 
             app.UseRouting();
+
+            // 跨域请求处理中间件
+            app.UseCors("CorsIpAccess");
 
             // 自定义鉴权中间件
             // app.UseJwtTokenAuth();

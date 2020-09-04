@@ -51,6 +51,29 @@
             <param name="id">广告编号</param>
             <returns>返回指定编号的广告</returns>
         </member>
+        <member name="T:Blog.Core.Api.Controllers.LoginController">
+            <summary>
+            登录控制器
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.LoginController.GetJsonp(System.String)">
+            <summary>
+            获取客户端令牌
+            </summary>
+            <returns>客户端令牌</returns>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.LoginController.GetToken(System.String)">
+            <summary>
+            获取客户端令牌
+            </summary>
+            <returns>客户端令牌</returns>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.LoginController.PostToken(System.Object)">
+            <summary>
+            获取客户端令牌
+            </summary>
+            <returns>客户端令牌</returns>
+        </member>
         <member name="T:Blog.Core.Api.Controllers.WeatherForecastController">
             <summary>
             天气广播控制器

@@ -17,21 +17,21 @@
             <param name="second">被加数</param>
             <returns>相加结果</returns>
         </member>
-        <member name="M:AdvertisementController.Add(Blog.Core.Model.Advertisement)">
+        <member name="M:AdvertisementController.Add(Blog.Core.Model.Models.AdvertisementModel)">
             <summary>
             添加广告
             </summary>
             <param name="model">广告</param>
             <returns>添加的广告编号</returns>
         </member>
-        <member name="M:AdvertisementController.Delete(Blog.Core.Model.Advertisement)">
+        <member name="M:AdvertisementController.Delete(Blog.Core.Model.Models.AdvertisementModel)">
             <summary>
             删除广告
             </summary>
             <param name="model">广告</param>
             <returns>删除成功返回true，否则返回false</returns>
         </member>
-        <member name="M:AdvertisementController.Update(Blog.Core.Model.Advertisement)">
+        <member name="M:AdvertisementController.Update(Blog.Core.Model.Models.AdvertisementModel)">
             <summary>
             更新广告
             </summary>

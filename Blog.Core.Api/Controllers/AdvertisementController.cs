@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using Blog.Core.Model;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using Blog.Core.IService;
+using Blog.Core.Model.Models;
 
 /// <summary>
 /// 广告控制器
@@ -40,7 +40,7 @@ public class AdvertisementController : ControllerBase
     /// <returns>添加的广告编号</returns>
     [HttpPost]
     [Route("[controller]/[action]")]
-    public int Add([Required]Advertisement model)
+    public int Add([Required]AdvertisementModel model)
     {
         return service.Add(model).Result;
     }
@@ -52,7 +52,7 @@ public class AdvertisementController : ControllerBase
     /// <returns>删除成功返回true，否则返回false</returns>
     [HttpPost]
     [Route("[controller]/[action]")]
-    public bool Delete(Advertisement model)
+    public bool Delete(AdvertisementModel model)
     {
         return service.Delete(model).Result > 0;
     }
@@ -64,7 +64,7 @@ public class AdvertisementController : ControllerBase
     /// <returns>更新成功返回true，否则返回false</returns>
     [HttpPost]
     [Route("[controller]/[action]")]
-    public bool Update([Required]Advertisement model)
+    public bool Update([Required]AdvertisementModel model)
     {
         return service.Update(model).Result > 0;
     }
@@ -75,7 +75,7 @@ public class AdvertisementController : ControllerBase
     /// <returns>返回所有广告</returns>
     [HttpPost]
     [Route("[controller]/[action]")]
-    public List<Advertisement> QueryAll()
+    public List<AdvertisementModel> QueryAll()
     {
         return service.Query().Result?.ToList();
     }
@@ -87,7 +87,7 @@ public class AdvertisementController : ControllerBase
     /// <returns>返回指定编号的广告</returns>
     [HttpPost]
     [Route("[controller]/[action]")]
-    public Advertisement QueryById([Required]int id)
+    public AdvertisementModel QueryById([Required]int id)
     {
         return service.QueryById(id)?.Result;
     }

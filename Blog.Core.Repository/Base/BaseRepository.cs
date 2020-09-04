@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Blog.Core.Model;
+using Blog.Core.Model.Models;
 using Blog.Core.Repository.Sugar;
 using SqlSugar;
 

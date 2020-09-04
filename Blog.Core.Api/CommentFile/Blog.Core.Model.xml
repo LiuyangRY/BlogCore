@@ -4,112 +4,253 @@
         <name>Blog.Core.Model</name>
     </assembly>
     <members>
-        <member name="P:Blog.Core.Model.Advertisement.Id">
+        <member name="P:Blog.Core.Model.Models.AdvertisementModel.Id">
             <summary>
             ID
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.Advertisement.ImgUrl">
+        <member name="P:Blog.Core.Model.Models.AdvertisementModel.ImgUrl">
             <summary>
             广告图片
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.Advertisement.Title">
+        <member name="P:Blog.Core.Model.Models.AdvertisementModel.Title">
             <summary>
             广告标题
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.Advertisement.Url">
+        <member name="P:Blog.Core.Model.Models.AdvertisementModel.Url">
             <summary>
             广告链接
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.Advertisement.Remark">
+        <member name="P:Blog.Core.Model.Models.AdvertisementModel.Remark">
             <summary>
             备注
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.Advertisement.CreateTime">
+        <member name="P:Blog.Core.Model.Models.AdvertisementModel.CreateTime">
             <summary>
             创建时间
             </summary>
         </member>
-        <member name="T:Blog.Core.Model.LoveModel">
+        <member name="T:Blog.Core.Model.Models.BlogArticleModel">
+            <summary>
+            博客文章模型
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.ID">
+            <summary>
+            主键
+            </summary>
+            这里之所以没用RootEntity，是想保持和之前的数据库一致，主键是bID，不是Id
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.Submitter">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.Title">
+            <summary>
+            标题blog
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.Category">
+            <summary>
+            类别
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.Traffic">
+            <summary>
+            访问量
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.CommentNum">
+            <summary>
+            评论数量
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.UpdateTime">
+            <summary> 
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.IsDeleted">
+            <summary>
+            逻辑删除
+            </summary>
+        </member>
+        <member name="T:Blog.Core.Model.Models.LoveModel">
             <summary>
             这是爱
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.LoveModel.Id">
+        <member name="P:Blog.Core.Model.Models.LoveModel.Id">
             <summary>
             编号
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.LoveModel.Name">
+        <member name="P:Blog.Core.Model.Models.LoveModel.Name">
             <summary>
             年龄
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.LoveModel.Age">
+        <member name="P:Blog.Core.Model.Models.LoveModel.Age">
             <summary>
             年龄
             </summary>
         </member>
-        <member name="T:Blog.Core.Model.PageModel`1">
+        <member name="T:Blog.Core.Model.Models.PageModel`1">
             <summary>
             通用分页信息类
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.PageModel`1.Page">
+        <member name="P:Blog.Core.Model.Models.PageModel`1.Page">
             <summary>
             当前页码
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.PageModel`1.PageCount">
+        <member name="P:Blog.Core.Model.Models.PageModel`1.PageCount">
             <summary>
             总页数
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.PageModel`1.DataCount">
+        <member name="P:Blog.Core.Model.Models.PageModel`1.DataCount">
             <summary>
             数据总数
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.PageModel`1.PageSize">
+        <member name="P:Blog.Core.Model.Models.PageModel`1.PageSize">
             <summary>
             每页数据量
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.PageModel`1.Data">
+        <member name="P:Blog.Core.Model.Models.PageModel`1.Data">
             <summary>
             数据
             </summary>
         </member>
-        <member name="T:Blog.Core.Model.WeatherForecast">
+        <member name="T:Blog.Core.Model.Models.WeatherForecastModel">
             <summary>
             天气广播实体
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.WeatherForecast.Date">
+        <member name="P:Blog.Core.Model.Models.WeatherForecastModel.Date">
             <summary>
             日期
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.WeatherForecast.TemperatureC">
+        <member name="P:Blog.Core.Model.Models.WeatherForecastModel.TemperatureC">
             <summary>
             温度(摄氏度)
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.WeatherForecast.TemperatureF">
+        <member name="P:Blog.Core.Model.Models.WeatherForecastModel.TemperatureF">
             <summary>
             温度(华氏摄氏度)
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Blog.Core.Model.WeatherForecast.Summary">
+        <member name="P:Blog.Core.Model.Models.WeatherForecastModel.Summary">
             <summary>
             简介
             </summary>
             <value></value>
+        </member>
+        <member name="T:Blog.Core.Model.ViewModels.BlogArticleViewModel">
+            <summary>
+            博客信息展示类
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Submitter">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Title">
+            <summary>
+            博客标题
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Digest">
+            <summary>
+            摘要
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Previous">
+            <summary>
+            上一篇
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.PreviousID">
+            <summary>
+            上一篇主键
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Next">
+            <summary>
+            下一篇
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.NextID">
+            <summary>
+            下一篇主键
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Category">
+            <summary>
+            类别
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Traffic">
+            <summary>
+            访问量
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.CommentNum">
+            <summary>
+            评论数量
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.UpdateTime">
+            <summary> 
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.Remark">
+            <summary>
+            备注
+            </summary>
         </member>
     </members>
 </doc>

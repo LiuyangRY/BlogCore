@@ -1,8 +1,8 @@
 using System;
 
-namespace Blog.Core.Model
+namespace Blog.Core.Model.Models
 {
-    public class Advertisement
+    public class AdvertisementModel
     {
         /// <summary>
         /// ID

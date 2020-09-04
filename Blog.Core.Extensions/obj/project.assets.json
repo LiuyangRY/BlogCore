@@ -2266,6 +2266,9 @@
       "Blog.Core.Model/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "sqlSugarCore": "5.0.0.15"
+        },
         "compile": {
           "bin/placeholder/Blog.Core.Model.dll": {}
         },

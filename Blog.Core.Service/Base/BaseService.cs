@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Blog.Core.Common.Attributes;
 using Blog.Core.IService.Base;
-using Blog.Core.Model;
+using Blog.Core.Model.Models;
 using Blog.Core.Repository.Base;
 using SqlSugar;
 

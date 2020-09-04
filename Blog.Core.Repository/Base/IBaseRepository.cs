@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using SqlSugar;
-using Blog.Core.Model;
+using Blog.Core.Model.Models;
 
 namespace Blog.Core.Repository.Base
 {

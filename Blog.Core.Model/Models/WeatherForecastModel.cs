@@ -1,11 +1,11 @@
 using System;
 
-namespace Blog.Core.Model
+namespace Blog.Core.Model.Models
 {
     /// <summary>
     /// 天气广播实体
     /// </summary>
-    public class WeatherForecast
+    public class WeatherForecastModel
     {
         /// <summary>
         /// 日期

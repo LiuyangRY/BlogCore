@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Blog.Core.Model
+namespace Blog.Core.Model.Models
 {
     /// <summary>
     /// 通用分页信息类

@@ -1,4 +1,4 @@
-﻿namespace Blog.Core.Model
+﻿namespace Blog.Core.Model.Models
 {
     /// <summary>
     /// 这是爱

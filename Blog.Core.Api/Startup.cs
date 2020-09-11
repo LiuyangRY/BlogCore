@@ -3,6 +3,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
+using AutoMapper;
 using Blog.Core.Common.DB;
 using Blog.Core.Common.Helper;
 using Blog.Core.Extensions.Service;
@@ -147,6 +148,9 @@ namespace Blog.Core.Api
             #endregion
 
             services.AddControllers();
+
+            // AutoMapper实体映射
+            services.AddAutoMapper(typeof(Startup));
 
         }
 

@@ -5,8 +5,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../Blog.Core.Common/Blog.Core.Common.csproj"/>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="../Blog.Core.IService/Blog.Core.IService.csproj"/>
     <ProjectReference Include="../Blog.Core.Repository/Blog.Core.Repository.csproj"/>
   </ItemGroup>

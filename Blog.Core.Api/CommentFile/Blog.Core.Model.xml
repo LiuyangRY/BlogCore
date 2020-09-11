@@ -75,7 +75,7 @@
             评论数量
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.Models.BlogArticleModel.UpdateTime">
+        <member name="P:Blog.Core.Model.Models.BlogArticleModel.ModifyTime">
             <summary> 
             修改时间
             </summary>
@@ -237,7 +237,7 @@
             评论数量
             </summary>
         </member>
-        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.UpdateTime">
+        <member name="P:Blog.Core.Model.ViewModels.BlogArticleViewModel.ModifyTime">
             <summary> 
             修改时间
             </summary>

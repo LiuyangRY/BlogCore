@@ -4253,11 +4253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+      "projectUniqueName": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
       "projectName": "Blog.Core.Repository",
-      "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+      "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\obj\\",
+      "outputPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4273,8 +4273,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "f:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj"
             }
           }
         }

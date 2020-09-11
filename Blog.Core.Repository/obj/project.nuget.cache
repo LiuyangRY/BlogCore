@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E4XJRBVrhGG2IepfO0+pPPYXvMd/e110N+XRmoSZ4uQnoIFLOab2iisuO4JERY4KLbo+5AdH858osy2gQGweTg==",
+  "dgSpecHash": "CcHBc3JMvLwRA0hGPIYWQwEPwDA+Q+VjjMzfJWkPCXG7VbPqjSSfGTn07qEp9z7nZBE3Uvt+JDS4ABPUI0nERg==",
   "success": true,
-  "projectFilePath": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
+  "projectFilePath": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\google.protobuf\\3.5.1\\google.protobuf.3.5.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

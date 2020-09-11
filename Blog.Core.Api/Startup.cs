@@ -6,6 +6,7 @@ using Autofac;
 using AutoMapper;
 using Blog.Core.Common.DB;
 using Blog.Core.Common.Helper;
+using Blog.Core.Extensions.AutoMapper;
 using Blog.Core.Extensions.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -150,8 +151,8 @@ namespace Blog.Core.Api
             services.AddControllers();
 
             // AutoMapper实体映射
-            services.AddAutoMapper(typeof(Startup));
-
+            services.AddAutoMapper(typeof(AutoMapperConfig));
+            AutoMapperConfig.RegisterMappings();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

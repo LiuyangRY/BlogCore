@@ -171,16 +171,16 @@ namespace Blog.Core.Repository.Base
             return await Update(model, null, null, where);
         }
 
-        public async Task<int> Update(TEntity model, string[] columns = null, string[] ignoreColumn = null, string where = null)
+        public async Task<int> Update(TEntity model, List<string> columns = null, List<string> ignoreColumn = null, string where = null)
         {
             IUpdateable<TEntity> up = await Task.Run(() => Db.Updateable<TEntity>(model));
-            if(columns != null && columns.Length > 0)
+            if(columns != null && columns.Count > 0)
             {
-                up = await Task.Run(() => up.UpdateColumns(columns));
+                up = await Task.Run(() => up.UpdateColumns(columns.ToArray()));
             }
-            if(ignoreColumn != null && ignoreColumn.Length > 0)
+            if(ignoreColumn != null && ignoreColumn.Count > 0)
             {
-                up = await Task.Run(() => up.IgnoreColumns(ignoreColumn));
+                up = await Task.Run(() => up.IgnoreColumns(ignoreColumn.ToArray()));
             }
             if(string.IsNullOrWhiteSpace(where))
             {

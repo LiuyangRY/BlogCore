@@ -8,4 +8,7 @@
     <ProjectReference Include="../Blog.Core.IService/Blog.Core.IService.csproj"/>
     <ProjectReference Include="../Blog.Core.Repository/Blog.Core.Repository.csproj"/>
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0"/>
+  </ItemGroup>
 </Project>

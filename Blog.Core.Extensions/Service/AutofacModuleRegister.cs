@@ -48,7 +48,10 @@ namespace Blog.Core.Extensions.Service
                     .InstancePerLifetimeScope()
                     .EnableInterfaceInterceptors()
                     .InterceptedBy(aopList.ToArray());
-                
+                builder.RegisterType<BlogArticleService>().As<IBlogArticleService>()
+                    .InstancePerLifetimeScope()
+                    .EnableInterfaceInterceptors()
+                    .InterceptedBy(aopList.ToArray());
             #endregion
         }
     }   

@@ -29,7 +29,7 @@ namespace Blog.Core.IService.Base
 
         Task<int> Update(object operateAnonymousObjects);
 
-        Task<int> Update(TEntity entity, string[] columns = null, string[] ignoreColumns = null, string strWhere = "");
+        Task<int> Update(TEntity entity, List<string> columns = null, List<string> ignoreColumns = null, string strWhere = "");
 
         Task<IEnumerable<TEntity>> Query();
         Task<IEnumerable<TEntity>> Query(string where);

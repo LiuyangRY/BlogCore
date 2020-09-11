@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rIBZ+S5e3DQqxghkn5QUkSBffMq/M2TpbQWCMxHF+QDFbWMgl2MoQxq3BRqgJr2MAvBmSMHFWfesDMs5IzEK1A==",
+  "dgSpecHash": "S6KP/KIG1XVpy4Bpl6lTznCIxDQHyCMEYCcHa4552j097CaraSi4fSckDezch9RoJykb5iFuDSATpXPRGdCKMA==",
   "success": true,
-  "projectFilePath": "f:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
+  "projectFilePath": "F:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\autofac\\5.1.0\\autofac.5.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

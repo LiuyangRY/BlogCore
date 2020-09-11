@@ -6,6 +6,7 @@ namespace Blog.Core.Model.Models
     /// <summary>
     /// 博客文章模型
     /// </summary>
+    [SugarTable(tableName : "BlogArticle")]
     public class BlogArticleModel
     {
         /// <summary>
@@ -52,7 +53,7 @@ namespace Blog.Core.Model.Models
         /// <summary> 
         /// 修改时间
         /// </summary>
-        public DateTime UpdateTime { get; set; }
+        public DateTime ModifyTime { get; set; }
 
         /// <summary>
         /// 创建时间

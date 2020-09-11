@@ -97,7 +97,7 @@ namespace Blog.Core.Repository.Base
         /// <param name="ignoreColumn">忽略列（默认为null）</param>
         /// <param name="where">更新条件（默认为null）</param>
         /// <returns>更新的数量</returns>
-        Task<int> Update(TEntity model, string[] columns = null, string[] ignoreColumn = null, string where = null);
+        Task<int> Update(TEntity model, List<string> columns = null, List<string> ignoreColumn = null, string where = null);
 
         /// <summary>
         /// 查询所有

@@ -142,7 +142,7 @@ namespace Blog.Core.Service.Base
             return await repository.Update(operateAnonymousObjects);
         }
 
-        public async Task<int> Update(TEntity entity, string[] columns = null, string[] ignoreColumns = null, string where = "")
+        public async Task<int> Update(TEntity entity, List<string> columns = null, List<string> ignoreColumns = null, string where = "")
         {
             return await repository.Update(entity, columns, ignoreColumns, where);
         }

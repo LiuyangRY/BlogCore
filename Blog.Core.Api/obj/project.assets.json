@@ -2503,6 +2503,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.0.0",
           "Autofac.Extensions.DependencyInjection": "6.0.0",
           "Autofac.Extras.DynamicProxy": "5.0.0",
           "Blog.Core.Common": "1.0.0",
@@ -2564,7 +2565,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "AutoMapper": "10.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.0.1",
           "Blog.Core.Common": "1.0.0",
           "Blog.Core.IService": "1.0.0",
           "Blog.Core.Repository": "1.0.0"
@@ -8207,6 +8207,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.0.1",
       "Autofac.Extensions.DependencyInjection >= 6.0.0",
       "Blog.Core.Extensions >= 1.0.0",
       "Blog.Core.IService >= 1.0.0",
@@ -8221,11 +8222,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
+      "projectUniqueName": "F:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
       "projectName": "Blog.Core.Api",
-      "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
+      "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Api\\obj\\",
+      "outputPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8241,14 +8242,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "f:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj"
             },
-            "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
             },
-            "f:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj"
             }
           }
         }
@@ -8262,6 +8263,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[6.0.0, )"

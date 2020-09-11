@@ -70,7 +70,7 @@ namespace Blog.Core.Model.ViewModels
         /// <summary> 
         /// 修改时间
         /// </summary>
-        public DateTime UpdateTime { get; set; }
+        public DateTime ModifyTime { get; set; }
 
         /// <summary>
         /// 创建时间

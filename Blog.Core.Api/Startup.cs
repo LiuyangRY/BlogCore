@@ -1,9 +1,11 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using AutoMapper;
+using Blog.Core.Api.SwaggerHelper;
 using Blog.Core.Common.DB;
 using Blog.Core.Common.Helper;
 using Blog.Core.Extensions.AutoMapper;
@@ -26,11 +28,6 @@ namespace Blog.Core.Api
         /// 接口名称
         /// </summary>
         public string ApiName { get; set; } = "Blog.Core";
-
-        /// <summary>
-        /// 文档版本
-        /// </summary>
-        public string Version { get; set; } = "V1";
 
         public IConfiguration Configuration { get; }
 
@@ -58,12 +55,13 @@ namespace Blog.Core.Api
 
             // 配置Swagger
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("V1", new OpenApiInfo(){
-                    Version = "v1",
-                    Title = $"{ApiName}接口文档——NetCore 3.0",
-                    Description = $"{ApiName} HTTP API {Version}",
-                    Contact = new OpenApiContact(){ Name = ApiName, Email = "1044457987@qq.com", Url = new Uri("https://www.jianshu.com/u/00b7351bacae")},
-                    License = new OpenApiLicense(){ Name = ApiName, Url = new Uri("https://www.jianshu.com/u/00b7351bacae")}
+                typeof(CustomApiVersion).GetEnumNames().ToList().ForEach(version => {
+                    c.SwaggerDoc(version, new OpenApiInfo(){
+                        Title = $"{ApiName}接口文档——NetCore 3.0",
+                        Description = $"{ApiName} HTTP API {version}",
+                        Contact = new OpenApiContact(){ Name = ApiName, Email = "1044457987@qq.com", Url = new Uri("https://www.jianshu.com/u/00b7351bacae")},
+                        License = new OpenApiLicense(){ Name = ApiName, Url = new Uri("https://www.jianshu.com/u/00b7351bacae")}
+                    });
                 });
 
                 c.OrderActionsBy(o => o.RelativePath);
@@ -100,6 +98,7 @@ namespace Blog.Core.Api
                     });
                 #endregion
             });
+            
             #region 创建自定义授权策略
                 services.AddAuthorization(options => {
                 options.AddPolicy("Client", policy => policy.RequireRole("Client").Build());
@@ -168,7 +167,9 @@ namespace Blog.Core.Api
             // 使用Swagger
             app.UseSwagger();
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint($"/swagger/{Version}/swagger.json",$"{ApiName} {Version}");
+                typeof(CustomApiVersion).GetEnumNames().OrderByDescending(versionName => versionName).ToList().ForEach(version => {
+                    c.SwaggerEndpoint($"/swagger/{version}/swagger.json",$"{ApiName} {version}");
+                });
                 //路径配置
                 c.RoutePrefix = "apidoc"; 
             });

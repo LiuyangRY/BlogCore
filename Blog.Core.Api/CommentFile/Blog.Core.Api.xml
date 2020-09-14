@@ -79,6 +79,18 @@
             </summary>
             <returns>客户端令牌</returns>
         </member>
+        <member name="M:Blog.Core.Api.Controllers.LoginController.GetTokenV2(System.String)">
+            <summary>
+            获取客户端令牌（V2）
+            </summary>
+            <returns>客户端令牌</returns>
+        </member>
+        <member name="M:Blog.Core.Api.Controllers.LoginController.PostTokenV2(System.Object)">
+            <summary>
+            获取客户端令牌（V2）
+            </summary>
+            <returns>客户端令牌</returns>
+        </member>
         <member name="T:Blog.Core.Api.Controllers.WeatherForecastController">
             <summary>
             天气广播控制器
@@ -118,15 +130,36 @@
             接口名称
             </summary>
         </member>
-        <member name="P:Blog.Core.Api.Startup.Version">
-            <summary>
-            文档版本
-            </summary>
-        </member>
         <member name="M:Blog.Core.Api.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
             <summary>
             配置Autofac容器，在Program.cs的CreateHostBuilder中添加Autofac服务工厂
             </summary>
+        </member>
+        <member name="T:Blog.Core.Api.SwaggerHelper.CustomApiVersion">
+            <summary>
+            自定义Api版本枚举
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Api.SwaggerHelper.CustomApiVersion.V1">
+            <summary>
+            版本1
+            </summary>
+        </member>
+        <member name="F:Blog.Core.Api.SwaggerHelper.CustomApiVersion.V2">
+            <summary>
+            版本2
+            </summary>
+        </member>
+        <member name="T:Blog.Core.Api.SwaggerHelper.CustomRouteAttribute">
+            <summary>
+            自定义路由
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Api.SwaggerHelper.CustomRouteAttribute.GroupName">
+            <summary>
+            API分组名称
+            </summary>
+            <value></value>
         </member>
     </members>
 </doc>

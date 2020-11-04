@@ -5,11 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using AutoMapper;
+using Blog.Core.Api.Log;
 using Blog.Core.Api.SwaggerHelper;
 using Blog.Core.Common.DB;
 using Blog.Core.Common.Helper;
 using Blog.Core.Extensions.AutoMapper;
 using Blog.Core.Extensions.Service;
+using log4net;
+using log4net.Config;
+using log4net.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,18 +33,37 @@ namespace Blog.Core.Api
         /// </summary>
         public string ApiName { get; set; } = "Blog.Core";
 
+        /// <summary>
+        /// 配置
+        /// </summary>
         public IConfiguration Configuration { get; }
+
+        /// <summary>
+        /// 日志仓库
+        /// </summary>
+        /// <value></value>
+        public static ILoggerRepository repository { get; set; }
 
         public Startup(IConfiguration configuration)
         {
+            // 配置
             Configuration = configuration;
+
+            // log4net 日志
+            repository = LogManager.CreateRepository("Blog.Core.Api");   // 需要获取日志的仓库名
+
+            // 指定配置文件,如果这里你遇到问题,应该是使用了 InProcess 模式,请查看项目文件并删除该配置
+            XmlConfigurator.Configure(repository, new FileInfo("log4net.config"));  // 配置文件
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // 注入Configuration
+            // 注入 Configuration
             services.AddSingleton(new Appsettings(Configuration));
+
+            // 注入 Log4Net 日志
+            services.AddSingleton<ILoggerHelper, LogHelper>();
 
             // 配置跨域请求策略
             services.AddCors(c =>

@@ -3596,11 +3596,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
+      "projectUniqueName": "f:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
       "projectName": "Blog.Core.Service",
-      "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
+      "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Service\\obj\\",
+      "outputPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3616,14 +3616,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj": {
-              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj"
+            "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj": {
+              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Common\\Blog.Core.Common.csproj"
             },
-            "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
-              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
+            "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
+              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
             },
-            "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
-              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
+            "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj": {
+              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Repository\\Blog.Core.Repository.csproj"
             }
           }
         }
@@ -3658,7 +3658,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

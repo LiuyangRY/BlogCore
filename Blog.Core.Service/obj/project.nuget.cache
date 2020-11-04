@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "REeS2sqGUZgk57wpaA+LctDtZ2HgEGxrTxfwbmF8fxfkt520g40nIT7T1zHjva6UsENdomekqdG+lv8yNBehrQ==",
+  "dgSpecHash": "Jcn8PsoSF1ie5gj1w4q3IcnuOIfeDa2QUCx+sD05f8kC0fpUHhtCUNpWIczDZ01G/TsgqpOTS5kAFW8NJXNkwA==",
   "success": true,
-  "projectFilePath": "F:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
+  "projectFilePath": "f:\\Liuyang\\BlogCore\\Blog.Core.Service\\Blog.Core.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\google.protobuf\\3.5.1\\google.protobuf.3.5.1.nupkg.sha512",

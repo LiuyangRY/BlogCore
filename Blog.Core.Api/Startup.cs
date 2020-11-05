@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using AutoMapper;
+using Blog.Core.Api.Filters;
 using Blog.Core.Api.Log;
 using Blog.Core.Api.SwaggerHelper;
 using Blog.Core.Common.DB;
@@ -59,6 +60,11 @@ namespace Blog.Core.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // 注入全局异常捕获
+            services.AddMvc(s => {
+                s.Filters.Add(typeof(GlobalExceptionFilter));
+            }).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
+
             // 注入 Configuration
             services.AddSingleton(new Appsettings(Configuration));
 

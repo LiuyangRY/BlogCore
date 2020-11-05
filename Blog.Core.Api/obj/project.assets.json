@@ -8263,11 +8263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
+      "projectUniqueName": "F:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
       "projectName": "Blog.Core.Api",
-      "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
+      "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Api\\Blog.Core.Api.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Api\\obj\\",
+      "outputPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8283,14 +8283,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "f:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Extensions\\Blog.Core.Extensions.csproj"
             },
-            "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.IService\\Blog.Core.IService.csproj"
             },
-            "f:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj": {
-              "projectPath": "f:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj"
+            "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj": {
+              "projectPath": "F:\\Liuyang\\BlogCore\\Blog.Core.Model\\Blog.Core.Model.csproj"
             }
           }
         }

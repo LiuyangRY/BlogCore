@@ -39,7 +39,7 @@ namespace Blog.Core.Api.Filters
 
         public string WriteLog(string throwMsg, Exception ex)
         {
-            return string.Format("【自定义错误】：{0} \r\n【异常类型】：{1} \r\n 【异常信息】：{2} \r\n【堆栈调用】：{3}",
+            return string.Format("【自定义错误】：{0} \r\n【异常类型】：{1} \r\n【异常信息】：{2} \r\n【堆栈调用】：{3}",
                 new object[] { throwMsg, ex.GetType().Name, ex.Message, ex.StackTrace });
         }
     }

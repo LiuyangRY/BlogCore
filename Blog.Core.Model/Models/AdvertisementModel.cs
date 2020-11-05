@@ -1,7 +1,9 @@
 using System;
+using SqlSugar;
 
 namespace Blog.Core.Model.Models
 {
+    [SugarTable(tableName : "Advertisement")]
     public class AdvertisementModel
     {
         /// <summary>

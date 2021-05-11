@@ -3,6 +3,7 @@ DataBase/
 
 # Build and Object Folders
 bin/
+obj/
 
 # Nuget packages directory 
 packages/ 

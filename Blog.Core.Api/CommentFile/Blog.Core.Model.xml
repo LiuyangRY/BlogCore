@@ -145,6 +145,28 @@
             数据
             </summary>
         </member>
+        <member name="P:Blog.Core.Model.Models.PermissionRoot`1.Pid">
+            <summary>
+            上一级菜单（0表示上一级无菜单）
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Blog.Core.Model.Models.PermissionRoot`1.Mid">
+            <summary>
+            接口api
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Blog.Core.Model.Models.UserRoleRoot`1.UserId">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="P:Blog.Core.Model.Models.UserRoleRoot`1.RoleId">
+            <summary>
+            角色编号
+            </summary>
+        </member>
         <member name="T:Blog.Core.Model.Models.WeatherForecastModel">
             <summary>
             天气广播实体

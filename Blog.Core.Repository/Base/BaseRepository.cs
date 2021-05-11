@@ -6,12 +6,18 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Blog.Core.Model.Models;
 using Blog.Core.Repository.Sugar;
+using Blog.Core.Repository.UnitOfWork;
 using SqlSugar;
 
 namespace Blog.Core.Repository.Base
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
     {
+        /// <summary>
+        /// 原子任务（事务）
+        /// </summary>
+        private readonly IUnitOfWork unitOfWork;
+
         /// <summary>
         /// 数据库上下文
         /// </summary>
@@ -29,12 +35,13 @@ namespace Blog.Core.Repository.Base
         /// <value></value>
         internal SimpleClient<TEntity> entityDb { get; private set; }
 
-        public BaseRepository()
+        public BaseRepository(IUnitOfWork unitWork)
         {
             DbContext.Init(BaseDBConfig.ConnectString);
             Context = DbContext.GetContext();
             Db = Context.Db;
             entityDb = Context.GetEntityDB<TEntity>(Db);
+            unitOfWork = unitWork;
         }
 
         public async Task<int> Add(TEntity model)

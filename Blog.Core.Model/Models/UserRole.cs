@@ -3,30 +3,22 @@ using System;
 
 namespace Blog.Core.Model.Models
 {
-    public class Role : RootEntityTKey<int>
+    public class UserRole : UserRoleRoot<int>
     {
-        public Role() {}
+        public UserRole() {}
         
-        public Role(string name)
+        public UserRole(int userId, int roleId)
         {
-            Name = name;
+            UserId = userId;
+            RoleId = roleId;
+            CreateId = userId;
         }
-
+        
         [SugarColumn(IsNullable = true)]
         public bool? IsDeleted { get; set; } = false;
 
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 50, IsNullable = true)]
-        public string Name { get; set; }
-
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 100, IsNullable = true)]
-        public string Description { get; set; }
-
-        public int OrderSort { get; set; } = 1;
-
-        public bool Enabled { get; set; } = true;
-
         [SugarColumn(IsNullable = true)]
-        public int?  CreateId { get; set; }
+        public int? CreateId { get; set; }
 
         [SugarColumn(ColumnDataType = "nvarchar", Length = 50, IsNullable = true)]
         public string CreatedBy { get; set; }
@@ -37,10 +29,10 @@ namespace Blog.Core.Model.Models
         [SugarColumn(IsNullable = true)]
         public int? ModifyId { get; set; }
 
-        [SugarColumn(ColumnDataType = "nvarchar", Length = 50, IsNullable = true)]
+        [SugarColumn(IsNullable = true)]
         public string ModifiedBy { get; set; }
 
-        [SugarColumn(IsNullable = true)]
+        [SugarColumn(ColumnDataType = "nvarchar", Length = 50, IsNullable = true)]
         public DateTime? ModifiedTime { get; set; } = DateTime.Now;
     }
 }
